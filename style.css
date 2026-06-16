@@ -1,0 +1,148 @@
+:root{
+    --ww-blue:#00D8FF;
+    --ww-white:#FFFFFF;
+    --ww-gold:#D4A73A;
+    --ww-black:#080B10;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#080B10;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    border-bottom:1px solid rgba(212,167,58,.35);
+}
+
+.logo{
+    width:48px;
+}
+
+.contact-area{
+    display:flex;
+    gap:12px;
+}
+
+.contact-area a{
+    color:var(--ww-blue);
+    text-decoration:none;
+
+    text-shadow:
+        0 0 5px var(--ww-blue),
+        0 0 15px var(--ww-blue);
+}
+
+.burger{
+    color:var(--ww-blue);
+    font-size:1.5rem;
+}
+
+main{
+    padding:12px;
+}
+
+.lane{
+    position:relative;
+    height:90px;
+}
+
+.card{
+    background:#101520;
+
+    border:1px solid rgba(0,216,255,.35);
+
+    border-radius:14px;
+
+    padding:18px;
+
+    margin-bottom:16px;
+
+    box-shadow:
+        0 0 10px rgba(0,216,255,.12);
+}
+
+.card h2{
+    color:var(--ww-blue);
+
+    text-shadow:
+        0 0 5px var(--ww-blue),
+        0 0 15px var(--ww-blue);
+}
+
+#weaver{
+    position:absolute;
+
+    top:16px;
+    left:16px;
+
+    width:60px;
+
+    z-index:1000;
+}
+
+#weaver img{
+    width:100%;
+
+    filter:
+        drop-shadow(0 0 6px #00D8FF)
+        drop-shadow(0 0 12px #00D8FF);
+}
+
+#weaver-panel{
+    position:absolute;
+
+    display:none;
+
+    width:90%;
+    max-width:420px;
+
+    min-height:70px;
+
+    padding:10px 14px;
+
+    border-radius:12px;
+
+    background:#111827;
+
+    border:1px solid rgba(0,216,255,.35);
+
+    z-index:1001;
+}
+
+.panel-buttons{
+    display:flex;
+    gap:8px;
+    margin-bottom:8px;
+}
+
+.panel-buttons button{
+    background:#0f172a;
+    color:white;
+    border:1px solid var(--ww-blue);
+    padding:6px 12px;
+}
+
+.search-row{
+    display:flex;
+    margin-top:10px;
+}
+
+.search-row input{
+    flex:1;
+    padding:8px;
+}
+
+.search-row button{
+    width:50px;
+}
